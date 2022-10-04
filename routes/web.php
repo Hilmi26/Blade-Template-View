@@ -19,11 +19,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/', function () {
-//     return view('home');
-// });
-
-Route::get('/layout', function () {
-    return view('/layout/about');
+Route::get('/index', function () {
+    return view('layout.home');
 });
 
+Route::get('/about', function () {
+    return view('layout.about');
+});
+
+Route::get('/service', function () {
+    return view('layout.service');
+});
+
+Route::get('/', function () {
+    return view('layout.project');
+});
