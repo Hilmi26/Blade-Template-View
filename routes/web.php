@@ -19,18 +19,35 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/index', function () {
-    return view('layout.home');
+Route::get('/', function () {
+    return view('home');
+});
+
+Route::get('/home', function () {
+    return view('home');
 });
 
 Route::get('/about', function () {
-    return view('layout.about');
+    return view('about');
 });
 
 Route::get('/service', function () {
-    return view('layout.service');
+    return view('service');
 });
 
-Route::get('/', function () {
-    return view('layout.project');
+Route::get('/project', function () {
+    return view('project');
 });
+
+Route::get('/testimonial', function () {
+    return view('testimonial');
+});
+
+Route::get('/ourteam', function () {
+    return view('ourteam');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
